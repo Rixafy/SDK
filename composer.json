@@ -1,0 +1,24 @@
+{
+    "name": "rixafy/sdk",
+    "description": "Nette and Doctrine utils for web projects",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rick Strafy",
+            "email": "rixafy@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.0",
+        "ext-bcmath": "*",
+        "doctrine/dbal": ">=3.0",
+        "ramsey/uuid": ">=4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rixafy\\": "src"
+        }
+    }
+}
