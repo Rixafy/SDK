@@ -17,7 +17,7 @@ class UuidGenerator
 	{
 		$uuid = Uuid::uuid7($dateTime);
 		
-		if (self::$previousUuidString !== null) {
+		if (self::$previousUuidString !== null && self::$previousUuidInteger !== null) {
 			if (substr(self::$previousUuidString, 0, 13) === substr($uuid->toString(), 0, 13)) {
 				$uuid = Uuid::fromInteger(bcadd(self::$previousUuidInteger, '1'));
 			}

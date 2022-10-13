@@ -27,9 +27,11 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^1.8"
     },
     "scripts": {
-        "test": "phpunit --verbose tests"
+        "test": "phpunit --verbose tests",
+        "analyze": "phpstan analyze src tests --level 9 -c phpstan.neon"
     }
 }
