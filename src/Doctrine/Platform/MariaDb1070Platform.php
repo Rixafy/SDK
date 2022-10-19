@@ -2,7 +2,7 @@
 
 namespace Rixafy\Doctrine\Platform;
 
-use Doctrine\DBAL\Platforms\MariaDBPlatform;
+use Doctrine\DBAL\Platforms\MariaDb1027Platform;
 use Doctrine\DBAL\Types\Types;
 
 /**
@@ -10,7 +10,7 @@ use Doctrine\DBAL\Types\Types;
  *
  * Note: Should not be used with versions prior to 10.7.
  */
-class MariaDb1070Platform extends MariaDBPlatform
+class MariaDb1070Platform extends MariaDb1027Platform
 {
 	public function hasNativeGuidType(): bool
 	{
